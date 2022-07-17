@@ -32,14 +32,14 @@ class Splash extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            /* Image.asset(
-                  'images/logo.png',
-                  fit: BoxFit.scaleDown,
-                ), */
-            Image.network(
+            Image.asset(
+              'images/logo.png',
+              fit: BoxFit.scaleDown,
+            ),
+            /* Image.network(
               'https://i.imgur.com/ws5fSyc.png',
               fit: BoxFit.scaleDown,
-            )
+            ) */
           ]),
     ));
   }
