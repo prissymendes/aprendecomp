@@ -29,7 +29,11 @@ class Credits extends StatelessWidget {
               ' https://commons.wikimedia.org/wiki/File:Games_for_Learning_(27470)_-_The_Noun_Project.svg\n'
               ' https://freesvg.org/img/Icones.png\n'
               ' https://www.flaticon.com/br/icone-gratis/licao_748477\n'
-              ' https://commons.wikimedia.org/wiki/File:Mouse-cursor-hand-pointer.svg\n\n',
+              ' https://commons.wikimedia.org/wiki/File:Mouse-cursor-hand-pointer.svg\n'
+              ' https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/CPT-ComputionalThinking-Abstraction.svg/512px-CPT-ComputionalThinking-Abstraction.svg.png\n'
+              ' https://publicdomainvectors.org/en/free-clipart/Red-cross-not-OK-vector-icon/9497.html\n'
+              ' https://publicdomainvectors.org/pt/vetorial-gratis/Fatiando-a-pizza/84388.html\n'
+              ' https://www.behance.net/gallery/23072217/Karens-Kitchen-Creations-Cookbook\n',
               softWrap: true,
               textAlign: TextAlign.justify,
               style: TextStyle(

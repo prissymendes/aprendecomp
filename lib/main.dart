@@ -1,21 +1,19 @@
 // Copyright 2018 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:aprendecomp/credits.dart';
 import 'package:aprendecomp/aprenda.dart';
 import 'package:aprendecomp/exercite.dart';
-//import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(
     const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AprendeComp',
-      home: Scaffold(
-        body: AprendeComp(),
-      ),
+      home: Scaffold(body: AprendeComp()),
+      //theme: new ThemeData(scaffoldBackgroundColor: const Colors.white),
     ),
   );
 }
@@ -31,7 +29,8 @@ class AprendeComp extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       body: Container(
-          color: const Color.fromRGBO(255, 255, 255, 1),
+          decoration: new BoxDecoration(color: Colors.white),
+          //color: const Color.fromRGBO(255, 255, 255, 1),
           child: Center(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -47,6 +46,7 @@ class AprendeComp extends StatelessWidget {
                       );
                     },
                     child: Card(
+                      elevation: 0,
                       child: Image.asset(
                         'images/aprenda.png',
                         fit: BoxFit.scaleDown,
@@ -64,6 +64,7 @@ class AprendeComp extends StatelessWidget {
                       );
                     },
                     child: Card(
+                      elevation: 0,
                       child: Image.asset(
                         'images/exercite.png',
                         fit: BoxFit.scaleDown,
