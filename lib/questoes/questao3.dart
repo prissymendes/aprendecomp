@@ -7,14 +7,14 @@ import 'package:aprendecomp/questoes/feedback_acerto.dart';
 import 'package:aprendecomp/questoes/feedback_erro.dart';
 //import 'package:flutter/widgets.dart';
 
-class Questao1 extends StatelessWidget {
-  const Questao1({Key? key}) : super(key: key);
+class Questao3 extends StatelessWidget {
+  const Questao3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Questão 1'),
+        title: const Text('Questão 3'),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
@@ -27,11 +27,13 @@ class Questao1 extends StatelessWidget {
               color: Colors.transparent,
             ),
             Text(
-              'Para tratar picada de cobra, o primeiro '
-              'passo é identificar se a cobra é venenosa '
-              'ou não, de acordo com suas características. '
-              'Esta ação pode utilizar uma das etapas do '
-              'Pensamento Computacional, conhecida como:',
+              'Antes de usar um eletrodoméstico, você '
+              'precisa seguir as instruções para montar as '
+              'peças que o compõem, e ligá-lo. '
+              'Isto se constitui numa sequência de passos '
+              'que devem ser seguidos em ordem para que tudo '
+              'funcione corretamente. No Pensamento Computacional, '
+              'a isso se dá o nome de:',
               softWrap: true,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -55,67 +57,67 @@ class Questao1 extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Erro(),
-                    ));
-              },
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 20),
-            ),
-            TextButton(
-              style: TextButton.styleFrom(primary: Colors.white),
-              child: Text(
-                'Decomposição',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                ),
-              ),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Erro(),
-                    ));
-              },
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 20),
-            ),
-            TextButton(
-              style: TextButton.styleFrom(primary: Colors.white),
-              child: Text(
-                'Abstração',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                ),
-              ),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Erro(),
-                    ));
-              },
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 20),
-            ),
-            TextButton(
-              style: TextButton.styleFrom(primary: Colors.white),
-              child: Text(
-                'Reconhecimento de Padrões',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                ),
-              ),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
                       builder: (context) => Acerto(),
+                    ));
+              },
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 20),
+            ),
+            TextButton(
+              style: TextButton.styleFrom(primary: Colors.white),
+              child: Text(
+                'Automático',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Erro(),
+                    ));
+              },
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 20),
+            ),
+            TextButton(
+              style: TextButton.styleFrom(primary: Colors.white),
+              child: Text(
+                'Algébrico',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Erro(),
+                    ));
+              },
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 20),
+            ),
+            TextButton(
+              style: TextButton.styleFrom(primary: Colors.white),
+              child: Text(
+                'Logaritmo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Erro(),
                     ));
               },
             )

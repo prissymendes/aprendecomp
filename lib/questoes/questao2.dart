@@ -7,14 +7,14 @@ import 'package:aprendecomp/questoes/feedback_acerto.dart';
 import 'package:aprendecomp/questoes/feedback_erro.dart';
 //import 'package:flutter/widgets.dart';
 
-class Questao1 extends StatelessWidget {
-  const Questao1({Key? key}) : super(key: key);
+class Questao2 extends StatelessWidget {
+  const Questao2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Questão 1'),
+        title: const Text('Questão 2'),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
@@ -27,11 +27,15 @@ class Questao1 extends StatelessWidget {
               color: Colors.transparent,
             ),
             Text(
-              'Para tratar picada de cobra, o primeiro '
-              'passo é identificar se a cobra é venenosa '
-              'ou não, de acordo com suas características. '
-              'Esta ação pode utilizar uma das etapas do '
-              'Pensamento Computacional, conhecida como:',
+              'Suponha que se queira saber o tipo e a quantidade de ração '
+              'para um animal de estimação, do qual se tem as seguintes '
+              'informações: É um cachorro chamado Rex, de 3 meses de idade. '
+              'Ele nasceu numa ninhada de 5 filhotes, e foi adotado há um mês. \n'
+              'Apesar de sabermos várias coisas sobre ele, nem tudo é relevante '
+              'para a definição que queremos. A Abstração consiste justamente em '
+              'considerar apenas os dados que vão ser úteis para resolver o problema. '
+              'Aplicando este conceito à situação descrita, selecione a opção mais '
+              'adequada:',
               softWrap: true,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -45,7 +49,7 @@ class Questao1 extends StatelessWidget {
             TextButton(
               style: TextButton.styleFrom(primary: Colors.white),
               child: Text(
-                'Algoritmo',
+                'Idade e nome',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 15,
@@ -65,47 +69,7 @@ class Questao1 extends StatelessWidget {
             TextButton(
               style: TextButton.styleFrom(primary: Colors.white),
               child: Text(
-                'Decomposição',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                ),
-              ),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Erro(),
-                    ));
-              },
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 20),
-            ),
-            TextButton(
-              style: TextButton.styleFrom(primary: Colors.white),
-              child: Text(
-                'Abstração',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                ),
-              ),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Erro(),
-                    ));
-              },
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 20),
-            ),
-            TextButton(
-              style: TextButton.styleFrom(primary: Colors.white),
-              child: Text(
-                'Reconhecimento de Padrões',
+                'Peso e espécie',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 15,
@@ -116,6 +80,46 @@ class Questao1 extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Acerto(),
+                    ));
+              },
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 20),
+            ),
+            TextButton(
+              style: TextButton.styleFrom(primary: Colors.white),
+              child: Text(
+                'Nome e data de adoção',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Erro(),
+                    ));
+              },
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 20),
+            ),
+            TextButton(
+              style: TextButton.styleFrom(primary: Colors.white),
+              child: Text(
+                'Espécie e quantidade de irmãos',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Erro(),
                     ));
               },
             )

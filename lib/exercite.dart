@@ -4,6 +4,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:aprendecomp/questoes/questao1.dart';
+import 'package:aprendecomp/questoes/questao2.dart';
+import 'package:aprendecomp/questoes/questao3.dart';
 //import 'package:flutter/widgets.dart';
 
 class Exercite extends StatelessWidget {
@@ -76,7 +78,7 @@ class Exercite extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Questao1(),
+                      builder: (context) => Questao2(),
                     ));
               },
             ),
@@ -95,7 +97,7 @@ class Exercite extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Questao1(),
+                      builder: (context) => Questao3(),
                     ));
               },
             )
