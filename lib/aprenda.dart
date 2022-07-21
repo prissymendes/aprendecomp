@@ -7,6 +7,7 @@ import 'package:aprendecomp/aprenda_content/aprenda_decomposicao.dart';
 import 'package:aprendecomp/aprenda_content/aprenda_padroes.dart';
 import 'package:aprendecomp/aprenda_content/aprenda_abstracao.dart';
 import 'package:aprendecomp/aprenda_content/aprenda_algoritmo.dart';
+import 'package:google_fonts/google_fonts.dart';
 //import 'package:flutter/widgets.dart';
 
 class Aprenda extends StatelessWidget {
@@ -24,6 +25,7 @@ class Aprenda extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       body: Container(
+        padding: EdgeInsets.all(10),
         decoration: new BoxDecoration(color: Colors.white),
         //color: const Color.fromRGBO(255, 255, 255, 1),
         child: SingleChildScrollView(
@@ -32,29 +34,28 @@ class Aprenda extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(bottom: 10),
               ),
-              Card(
-                elevation: 0,
-                child: Image.asset(
-                  "images/aprendaimg.png",
-                  fit: BoxFit.scaleDown,
-                  width: 100,
+              Row(children: [
+                Card(
+                  elevation: 0,
+                  child: Image.asset(
+                    "images/aprendaimg.png",
+                    fit: BoxFit.scaleDown,
+                    width: 90,
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 10),
-              ),
-              Text(
-                "Pensamento Computacional",
-                softWrap: true,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                  fontSize: 18,
+                Text(
+                  "Pensamento\nComputacional",
+                  softWrap: true,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    fontSize: 18,
+                  ),
                 ),
-              ),
+              ]),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.only(top: 15, left: 10),
                 child: Text(
                   'Já pensou porque os computadores são '
                   'capazes de fazer rapidamente tantas coisas '
@@ -74,18 +75,17 @@ class Aprenda extends StatelessWidget {
                   'obtidas aos moldes de como é feito pelos '
                   'computadores.',
                   softWrap: true,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                  ),
+                  textAlign: TextAlign.left,
+                  style: GoogleFonts.openSans(fontSize: 15),
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(bottom: 5),
+                padding: EdgeInsets.only(bottom: 10),
               ),
               Divider(
-                color: Colors.black,
+                color: Color.fromARGB(255, 188, 188, 188),
+                indent: 20,
+                endIndent: 22,
               ),
               Padding(
                 padding: EdgeInsets.only(bottom: 15),
@@ -94,22 +94,23 @@ class Aprenda extends StatelessWidget {
                 "Conheça alguns elementos que compõem o Pensamento Computacional, clicando a seguir:",
                 softWrap: true,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                ),
+                style: GoogleFonts.openSans(fontSize: 14),
               ),
               Padding(
                 padding: EdgeInsets.only(bottom: 20),
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color.fromARGB(255, 65, 90, 173),
-                  onSurface: Colors.green,
-                  elevation: 20,
-                  shadowColor: Color.fromARGB(255, 65, 90, 173),
-                ),
-                child: Text('Decomposição'),
+                    primary: Colors.green,
+                    onSurface: Colors.green,
+                    elevation: 10,
+                    shadowColor: Colors.black,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 65,
+                    )),
+                child: Text('Decomposição',
+                    style: GoogleFonts.quicksand(
+                        fontSize: 15, fontWeight: FontWeight.w500)),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -123,12 +124,14 @@ class Aprenda extends StatelessWidget {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color.fromARGB(255, 65, 90, 173),
+                  primary: Colors.green,
                   onSurface: Colors.green,
-                  elevation: 20,
-                  shadowColor: Color.fromARGB(255, 65, 90, 173),
+                  elevation: 10,
+                  shadowColor: Colors.black,
                 ),
-                child: Text('Reconhecimento de Padrões'),
+                child: Text('Reconhecimento de Padrões',
+                    style: GoogleFonts.quicksand(
+                        fontSize: 15, fontWeight: FontWeight.w500)),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -142,12 +145,17 @@ class Aprenda extends StatelessWidget {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color.fromARGB(255, 65, 90, 173),
+                  primary: Colors.green,
                   onSurface: Colors.green,
-                  elevation: 20,
-                  shadowColor: Color.fromARGB(255, 65, 90, 173),
+                  elevation: 10,
+                  shadowColor: Colors.black,
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 81,
+                  ),
                 ),
-                child: Text('Abstração'),
+                child: Text('Abstração',
+                    style: GoogleFonts.quicksand(
+                        fontSize: 15, fontWeight: FontWeight.w500)),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -161,12 +169,16 @@ class Aprenda extends StatelessWidget {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color.fromARGB(255, 65, 90, 173),
-                  onSurface: Colors.green,
-                  elevation: 20,
-                  shadowColor: Color.fromARGB(255, 65, 90, 173),
-                ),
-                child: Text('Algoritmo'),
+                    primary: Colors.green,
+                    onSurface: Colors.green,
+                    elevation: 10,
+                    shadowColor: Colors.black,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 81,
+                    )),
+                child: Text('Algoritmo',
+                    style: GoogleFonts.quicksand(
+                        fontSize: 15, fontWeight: FontWeight.w500)),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -174,7 +186,10 @@ class Aprenda extends StatelessWidget {
                         builder: (context) => Algoritmo(),
                       ));
                 },
-              )
+              ),
+              Padding(
+                padding: EdgeInsets.only(bottom: 25),
+              ),
             ],
           ),
         ),

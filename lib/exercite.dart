@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:aprendecomp/questoes/questao1.dart';
 import 'package:aprendecomp/questoes/questao2.dart';
 import 'package:aprendecomp/questoes/questao3.dart';
+import 'package:google_fonts/google_fonts.dart';
 //import 'package:flutter/widgets.dart';
 
 class Exercite extends StatelessWidget {
@@ -19,89 +20,121 @@ class Exercite extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(bottom: 10),
-            ),
-            Card(
-              elevation: 0,
-              child: Image.asset(
-                "images/exerciteimg.png",
-                fit: BoxFit.scaleDown,
-                width: 150,
+        padding: EdgeInsets.only(top: 10, left: 30, right: 30),
+        child: Container(
+          color: Colors.white,
+          child: Column(
+            //mainAxisAlignment: Alignment.,
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(bottom: 10),
               ),
-            ),
-            Divider(
-              color: Colors.transparent,
-            ),
-            Text(
-              "Clique abaixo para acessar as questões:",
-              softWrap: true,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 15,
+              Row(children: [
+                Card(
+                  elevation: 0,
+                  child: Image.asset(
+                    "images/exerciteimg.png",
+                    fit: BoxFit.scaleDown,
+                    width: 100,
+                  ),
+                ),
+                Text(
+                  "Clique abaixo\npara acessar\nas questões:",
+                  softWrap: true,
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.quicksand(
+                      fontSize: 16, fontWeight: FontWeight.w400),
+                ),
+              ]),
+              Padding(
+                padding: EdgeInsets.only(bottom: 25),
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 30),
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Color.fromARGB(255, 65, 90, 173),
-                onSurface: Colors.green,
-                elevation: 20,
-                shadowColor: Color.fromARGB(255, 65, 90, 173),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    primary: Colors.green,
+                    onSurface: Colors.green,
+                    elevation: 10,
+                    shadowColor: Colors.black,
+                    padding: EdgeInsets.only(
+                        bottom: 18, top: 18, left: 10, right: 10)),
+                child: Column(children: [
+                  Text('QUESTÃO',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.michroma(
+                          fontSize: 12, fontWeight: FontWeight.bold)),
+                  Text('1',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.michroma(
+                          fontSize: 40, fontWeight: FontWeight.w900)),
+                ]),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Questao1(),
+                      ));
+                },
               ),
-              child: Text('Questão 1'),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Questao1(),
-                    ));
-              },
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 20),
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Color.fromARGB(255, 65, 90, 173),
-                onSurface: Colors.green,
-                elevation: 20,
-                shadowColor: Color.fromARGB(255, 65, 90, 173),
+              Padding(
+                padding: EdgeInsets.only(bottom: 20),
               ),
-              child: Text('Questão 2'),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Questao2(),
-                    ));
-              },
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 20),
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Color.fromARGB(255, 65, 90, 173),
-                onSurface: Colors.green,
-                elevation: 20,
-                shadowColor: Color.fromARGB(255, 65, 90, 173),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    primary: Colors.green,
+                    onSurface: Colors.green,
+                    elevation: 10,
+                    shadowColor: Colors.black,
+                    padding: EdgeInsets.only(
+                        bottom: 18, top: 18, left: 10, right: 10)),
+                child: Column(children: [
+                  Text('QUESTÃO',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.michroma(
+                          fontSize: 12, fontWeight: FontWeight.bold)),
+                  Text('2',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.michroma(
+                          fontSize: 40, fontWeight: FontWeight.w900)),
+                ]),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Questao2(),
+                      ));
+                },
               ),
-              child: Text('Questão 3'),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Questao3(),
-                    ));
-              },
-            )
-          ],
+              Padding(
+                padding: EdgeInsets.only(bottom: 20),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    primary: Colors.green,
+                    onSurface: Colors.green,
+                    elevation: 10,
+                    shadowColor: Colors.black,
+                    padding: EdgeInsets.only(
+                        bottom: 18, top: 18, left: 10, right: 10)),
+                child: Column(children: [
+                  Text('QUESTÃO',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.michroma(
+                          fontSize: 12, fontWeight: FontWeight.bold)),
+                  Text('3',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.michroma(
+                          fontSize: 40, fontWeight: FontWeight.w900)),
+                ]),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Questao3(),
+                      ));
+                },
+              )
+            ],
+          ),
         ),
       ),
     );
