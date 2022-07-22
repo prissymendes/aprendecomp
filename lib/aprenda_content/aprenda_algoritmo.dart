@@ -14,27 +14,26 @@ class Algoritmo extends StatelessWidget {
       appBar: AppBar(
         title: Text('Algoritmo',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
       body: Container(
         color: Colors.white,
         child: SingleChildScrollView(
+          padding:
+              const EdgeInsets.only(left: 12, right: 12, top: 20, bottom: 20),
           child: Column(
             children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(bottom: 10),
-              ),
               Card(
                 elevation: 0,
                 child: Image.asset(
                   "images/recipe.jpg",
                   fit: BoxFit.scaleDown,
-                  width: 300,
+                  width: 250,
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(bottom: 10),
               ),
               Text(
@@ -47,45 +46,41 @@ class Algoritmo extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'A realização de tarefas geralmente envolve\n'
-                  'uma sequência de etapas, a serem cumpridas\n'
-                  'numa determinada ordem. Um algoritmo é a\n'
-                  'descrição do passo-a-passo necessário\n'
-                  'para cumprir uma tarefa.\n',
+                  'A realização de tarefas geralmente envolve '
+                  'uma sequência de etapas, a serem cumpridas '
+                  'numa determinada ordem. Um algoritmo é a '
+                  'descrição do passo-a-passo necessário '
+                  'para cumprir uma tarefa.',
                   softWrap: true,
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.left,
                   style: GoogleFonts.openSans(fontSize: 14),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 25),
+              const Padding(
+                padding: EdgeInsets.only(bottom: 15),
               ),
-              /*Divider(
-              color: Colors.black,
-            ),*/
               Container(
                 color: Color.fromARGB(255, 207, 231, 180),
-                padding: EdgeInsets.only(right: 10),
-                child: Row(
+                padding: EdgeInsets.all(10),
+                child: Column(
                   children: [
-                    /*Icon(
-                    Icons.view_headline_outlined,
-                    size: 25.0,
-                    color: Colors.black,
-                  ),*/
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('Exemplo:   '),
                     Text(
-                      'No dia-a-dia, um exemplo prático seria\n'
-                      'uma receita de bolo: diversos elementos\n'
-                      'são necessários para que ele possa ser feito\n'
-                      '(os ingredientes), e são feitas ações para\n'
-                      'processá-los de forma a chegar ao resultado desejado\n'
-                      '(as etapas da receita). A sequência em que elas são\n'
-                      'feitas é importante: você não ia querer comer um bolo\n'
-                      'em que os ovos só fossem adicionados depois de ele\n'
+                        'Exemplo:                                                          ',
+                        textAlign: TextAlign.left,
+                        style: GoogleFonts.raleway(
+                            fontSize: 14, fontWeight: FontWeight.bold)),
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 8),
+                    ),
+                    Text(
+                      'No dia-a-dia, um exemplo prático seria '
+                      'uma receita de bolo: diversos elementos '
+                      'são necessários para que ele possa ser feito '
+                      '(os ingredientes), e são feitas ações para '
+                      'processá-los de forma a chegar ao resultado desejado '
+                      '(as etapas da receita). A sequência em que elas são '
+                      'feitas é importante: você não ia querer comer um bolo '
+                      'em que os ovos só fossem adicionados depois de ele '
                       'ter ido ao forno, não é?',
                       style: GoogleFonts.raleway(fontSize: 15),
                     )

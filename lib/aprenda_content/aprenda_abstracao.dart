@@ -14,24 +14,23 @@ class Abstracao extends StatelessWidget {
       appBar: AppBar(
         title: Text('Abstração',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
       body: Container(
         color: Colors.white,
         child: SingleChildScrollView(
+          padding:
+              const EdgeInsets.only(left: 12, right: 12, top: 20, bottom: 20),
           child: Column(
             children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(bottom: 10),
-              ),
               Card(
                 elevation: 0,
                 child: Image.asset(
                   "images/CPT-ComputionalThinking-Abstraction.png",
                   fit: BoxFit.scaleDown,
-                  width: 150,
+                  width: 100,
                 ),
               ),
               Padding(
@@ -47,48 +46,44 @@ class Abstracao extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Abstração significa olhar para as informações\n'
-                  'relacionadas a um problema, e decidir quais\n'
-                  'são úteis para resolvê-lo, e quais podem ser\n '
+                  'Abstração significa olhar para as informações '
+                  'relacionadas a um problema, e decidir quais '
+                  'são úteis para resolvê-lo, e quais podem ser '
                   'ignoradas.',
                   softWrap: true,
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.left,
                   style: GoogleFonts.openSans(fontSize: 14),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 25),
+              const Padding(
+                padding: EdgeInsets.only(bottom: 15),
               ),
-              /*Divider(
-              color: Colors.black,
-            ),*/
               Container(
-                color: Color.fromARGB(255, 207, 231, 180),
-                padding: EdgeInsets.only(right: 10),
-                child: Row(
+                color: const Color.fromARGB(255, 207, 231, 180),
+                padding: const EdgeInsets.all(10),
+                child: Column(
                   children: [
-                    /*Icon(
-                    Icons.view_headline_outlined,
-                    size: 25.0,
-                    color: Colors.black,
-                  ),*/
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('Exemplo:   '),
                     Text(
-                      'Alguém que vai pintar a parede de uma casa\n'
-                      'pode ter várias informações sobre ela: qual\n'
-                      'sua altura e largura, de que material ela é feita,\n'
-                      'qual a preferência de cor de seu dono, se\n'
-                      'é interna ou externa, entre outras.\n'
-                      'Mas para calcular a área total a ser pintada,\n'
-                      'as únicas informações relevantes são a \n'
-                      'altura e largura da parede. Então, ao se resolver\n'
-                      'este problema, deve-se ignorar as demais informações,\n'
-                      'o que não significa que elas não possam ser úteis\n'
-                      'em outras situações (por exemplo, na escolha do tipo\n'
-                      'de tinta!).\n',
+                        'Exemplo:                                                          ',
+                        textAlign: TextAlign.left,
+                        style: GoogleFonts.raleway(
+                            fontSize: 14, fontWeight: FontWeight.bold)),
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 8),
+                    ),
+                    Text(
+                      'Alguém que vai pintar a parede de uma casa '
+                      'pode ter várias informações sobre ela: qual '
+                      'sua altura e largura, de que material ela é feita, '
+                      'qual a preferência de cor de seu dono, se '
+                      'é interna ou externa, entre outras. '
+                      'Mas para calcular a área total a ser pintada, '
+                      'as únicas informações relevantes são a  '
+                      'altura e largura da parede. Então, ao se resolver '
+                      'este problema, deve-se ignorar as demais informações, '
+                      'o que não significa que elas não possam ser úteis '
+                      'em outras situações (por exemplo, na escolha do tipo '
+                      'de tinta!).',
                       style: GoogleFonts.raleway(fontSize: 15),
                     )
                   ],

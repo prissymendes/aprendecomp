@@ -8,7 +8,6 @@ import 'package:aprendecomp/aprenda_content/aprenda_padroes.dart';
 import 'package:aprendecomp/aprenda_content/aprenda_abstracao.dart';
 import 'package:aprendecomp/aprenda_content/aprenda_algoritmo.dart';
 import 'package:google_fonts/google_fonts.dart';
-//import 'package:flutter/widgets.dart';
 
 class Aprenda extends StatelessWidget {
   const Aprenda({Key? key}) : super(key: key);
@@ -19,20 +18,17 @@ class Aprenda extends StatelessWidget {
       appBar: AppBar(
         title: Text("Aprenda",
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
       body: Container(
-        padding: EdgeInsets.all(10),
-        decoration: new BoxDecoration(color: Colors.white),
-        //color: const Color.fromRGBO(255, 255, 255, 1),
+        padding:
+            const EdgeInsets.only(left: 12, right: 12, top: 20, bottom: 20),
+        color: Colors.white,
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(bottom: 10),
-              ),
               Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                 Card(
                   elevation: 0,

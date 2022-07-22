@@ -16,13 +16,13 @@ class Questao2 extends StatelessWidget {
       appBar: AppBar(
         title: Text('Questão 2',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
       body: Container(
         padding:
-            const EdgeInsets.only(right: 30, left: 30, top: 20, bottom: 20),
+            const EdgeInsets.only(right: 25, left: 25, top: 20, bottom: 20),
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
@@ -42,13 +42,13 @@ class Questao2 extends StatelessWidget {
                   fontSize: 15,
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(bottom: 30),
               ),
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 86, right: 86)),
+                        bottom: 18, top: 18, left: 64, right: 64)),
                 child: Text('Idade e nome',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
@@ -68,7 +68,7 @@ class Questao2 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 83, right: 83)),
+                        bottom: 18, top: 18, left: 60, right: 60)),
                 child: Text('Peso e espécie',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
@@ -82,13 +82,13 @@ class Questao2 extends StatelessWidget {
                       ));
                 },
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(bottom: 20),
               ),
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 49, right: 49)),
+                        bottom: 18, top: 18, left: 26, right: 26)),
                 child: Text('Nome e data de adoção',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
@@ -108,10 +108,10 @@ class Questao2 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 19, right: 19)),
+                        bottom: 18, top: 18, left: 4, right: 4)),
                 child: Text('Espécie e quantidade de irmãos',
                     style: GoogleFonts.raleway(
-                      fontSize: 16,
+                      fontSize: 15,
                       fontWeight: FontWeight.w500,
                     )),
                 onPressed: () {

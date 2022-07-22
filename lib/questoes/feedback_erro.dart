@@ -17,16 +17,14 @@ class Erro extends StatelessWidget {
       appBar: AppBar(
         title: Text('Tente novamente!',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
+        padding: const EdgeInsets.only(left: 18, right: 18, top: 50),
         child: Column(
           children: <Widget>[
-            const Padding(
-              padding: EdgeInsets.only(bottom: 50),
-            ),
             Card(
               elevation: 0,
               child: Image.asset(
@@ -35,67 +33,108 @@ class Erro extends StatelessWidget {
                 width: 150,
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(bottom: 30),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Não foi dessa vez, mas que tal tentar de novo?',
-                softWrap: true,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 18,
-                ),
-              ),
-            ),
-            Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'Não foi dessa vez, mas que tal tentar de novo?',
+                  softWrap: true,
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.raleway(fontSize: 21),
+                )),
+            const Padding(
               padding: EdgeInsets.only(bottom: 50),
             ),
-            /*Divider(
-              color: Colors.black,
-            ),*/
             Container(
               color: Colors.white,
-              padding: EdgeInsets.only(right: 10),
+              padding: const EdgeInsets.only(right: 10),
               alignment: Alignment.bottomCenter,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 65, 90, 173),
-                      onSurface: Colors.green,
-                      elevation: 20,
-                      shadowColor: Color.fromARGB(255, 65, 90, 173),
+                  Container(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.green,
+                        onSurface: Colors.green,
+                        elevation: 10,
+                        shadowColor: Colors.black,
+                        padding: const EdgeInsets.only(
+                            bottom: 26, top: 26, left: 25, right: 25),
+                      ),
+                      child: Text(
+                        'Voltar às\nquestões',
+                        style: GoogleFonts.raleway(fontSize: 14),
+                        textAlign: TextAlign.center,
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Exercite(),
+                            ));
+                      },
                     ),
-                    child: Text('     Voltar às questões      '),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Exercite(),
-                          ));
-                    },
+                    decoration: const BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: Offset(6.0, 6.0),
+                          blurRadius: 4.0,
+                          spreadRadius: 2.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.green,
+                          offset: Offset(4.0, 4.0),
+                          blurRadius: 2.0,
+                          spreadRadius: 1.0,
+                        ),
+                      ],
+                    ),
                   ),
                   Spacer(),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 65, 90, 173),
-                      onSurface: Colors.green,
-                      elevation: 20,
-                      shadowColor: Color.fromARGB(255, 65, 90, 173),
+                  Container(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.green,
+                        onSurface: Colors.green,
+                        elevation: 10,
+                        shadowColor: Colors.black,
+                        padding: const EdgeInsets.only(
+                            bottom: 18, top: 18, left: 20, right: 20),
+                      ),
+                      child: Text(
+                        'Voltar para\na página\ninicial',
+                        style: GoogleFonts.raleway(fontSize: 14),
+                        textAlign: TextAlign.center,
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => AprendeComp(),
+                            ));
+                      },
                     ),
-                    child: Text('Voltar para a página inicial'),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => AprendeComp(),
-                          ));
-                    },
-                  )
+                    decoration: const BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: Offset(6.0, 6.0),
+                          blurRadius: 4.0,
+                          spreadRadius: 2.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.green,
+                          offset: Offset(4.0, 4.0),
+                          blurRadius: 2.0,
+                          spreadRadius: 1.0,
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),

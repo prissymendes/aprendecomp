@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-//import 'package:flutter/widgets.dart';
+import 'dart:ui';
 
 class Decomposicao extends StatelessWidget {
   const Decomposicao({Key? key}) : super(key: key);
@@ -15,24 +15,23 @@ class Decomposicao extends StatelessWidget {
       appBar: AppBar(
         title: Text('Decomposição',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
       body: Container(
         color: Colors.white,
         child: SingleChildScrollView(
+          padding:
+              const EdgeInsets.only(left: 12, right: 12, top: 20, bottom: 20),
           child: Column(
             children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(bottom: 10),
-              ),
               Card(
                 elevation: 0,
                 child: Image.asset(
                   "images/slicing-pizza-publicdomain.png",
                   fit: BoxFit.scaleDown,
-                  width: 200,
+                  width: 150,
                 ),
               ),
               Padding(
@@ -58,48 +57,65 @@ class Decomposicao extends StatelessWidget {
                   'teremos resolvido tudo.\nChamamos este conceito'
                   ' de Decomposição.',
                   softWrap: true,
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.left,
                   style: GoogleFonts.openSans(fontSize: 14),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 25),
+              const Padding(
+                padding: EdgeInsets.only(bottom: 15),
               ),
-              /*Divider(
-              color: Colors.black,
-            ),*/
               Container(
                 color: Color.fromARGB(255, 207, 231, 180),
-                padding: EdgeInsets.only(right: 10),
+                padding: EdgeInsets.all(10),
                 child: Column(
                   children: [
-                    /*Icon(
-                    Icons.view_headline_outlined,
-                    size: 25.0,
-                    color: Colors.black,
-                  ),*/
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('Exemplo:   '),
                     Text(
-                      'Para calcular a despesa mensal de\n'
-                      'uma casa, em vez de somar todos os\n'
-                      'gastos de uma vez só, podemos dividi-los\n'
-                      'em categorias, como contas, alimentação,\n'
-                      'transporte, etc.\n'
-                      'Como essas categorias possuem menos itens,\n'
-                      'então dentro de cada uma delas, vai ser uma\n'
-                      'soma mais fácil de resolver. Exemplo:\n\n'
-                      'Contas = Energia + Água + Aluguel\n'
-                      'Despesas de Alimentação = Mercado + Feira + Padaria\n'
-                      'Despesas de Transporte = Passagens de Ônibus + Gasolina\n\n'
-                      'E o valor final vai ser a soma dos resultados\n'
-                      'obtidos de cada categoria, que neste exemplo,\n'
-                      'corresponderão a três parcelas:\n\n'
-                      'Total de despesas da casa = Contas + Despesas de Alimentação\n'
-                      '+ Despesas de Transporte.',
+                        'Exemplo:                                                          ',
+                        textAlign: TextAlign.left,
+                        style: GoogleFonts.raleway(
+                            fontSize: 14, fontWeight: FontWeight.bold)),
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 8),
+                    ),
+                    Text(
+                      'Para calcular a despesa mensal de '
+                      'uma casa, em vez de somar todos os '
+                      'gastos de uma vez só, podemos dividi-los '
+                      'em categorias, como contas, alimentação, '
+                      'transporte, etc. '
+                      'Como essas categorias possuem menos itens, '
+                      'então dentro de cada uma delas, vai ser uma '
+                      'soma mais fácil de resolver. Exemplo:\n',
                       style: GoogleFonts.raleway(fontSize: 15),
+                    ),
+                    const Text(
+                      'Contas = energia + água + aluguel\n\n'
+                      'Despesas de Alimentação = mercado + feira + padaria\n\n'
+                      'Despesas de Transporte = passagens de ônibus + gasolina\n',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        fontFeatures: [
+                          FontFeature.enable('smcp'),
+                        ],
+                      ),
+                    ),
+                    Text(
+                      'E o valor final vai ser a soma dos resultados '
+                      'obtidos de cada categoria, que neste exemplo, '
+                      'corresponderão a três parcelas:\n',
+                      style: GoogleFonts.raleway(fontSize: 15),
+                    ),
+                    const Text(
+                      'Total de despesas da casa =\nContas + Despesas de Alimentação '
+                      '+ Despesas de Transporte.',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        fontFeatures: [
+                          FontFeature.enable('smcp'),
+                        ],
+                      ),
                     ),
                   ],
                 ),

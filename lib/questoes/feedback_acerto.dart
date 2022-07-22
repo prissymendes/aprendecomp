@@ -17,12 +17,12 @@ class Acerto extends StatelessWidget {
       appBar: AppBar(
         title: Text('Resposta correta',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(left: 18, right: 18, top: 50),
+        padding: const EdgeInsets.only(left: 18, right: 18, top: 50),
         child: Column(
           children: <Widget>[
             Card(
@@ -33,7 +33,7 @@ class Acerto extends StatelessWidget {
                 width: 300,
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(bottom: 30),
             ),
             Padding(
@@ -42,10 +42,10 @@ class Acerto extends StatelessWidget {
                   softWrap: true,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.raleway(
-                    fontSize: 22,
+                    fontSize: 21,
                   )),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(bottom: 50),
             ),
             /*Divider(
@@ -58,50 +58,84 @@ class Acerto extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
+                  Container(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.green,
+                          onSurface: Colors.green,
+                          padding: const EdgeInsets.only(
+                              bottom: 26, top: 26, left: 25, right: 25)),
+                      child: Text(
+                        'Mais\nquestões',
+                        style: GoogleFonts.raleway(fontSize: 14),
+                        textAlign: TextAlign.center,
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Exercite(),
+                            ));
+                      },
+                    ),
+                    decoration: const BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: Offset(6.0, 6.0),
+                          blurRadius: 4.0,
+                          spreadRadius: 2.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.green,
+                          offset: Offset(4.0, 4.0),
+                          blurRadius: 2.0,
+                          spreadRadius: 1.0,
+                        ),
+                      ],
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
                         primary: Colors.green,
                         onSurface: Colors.green,
                         elevation: 10,
                         shadowColor: Colors.black,
                         padding: const EdgeInsets.only(
-                            bottom: 26, top: 26, left: 25, right: 25)),
-                    child: Text(
-                      'Mais\nquestões',
-                      style: GoogleFonts.raleway(fontSize: 14),
-                      textAlign: TextAlign.center,
+                            bottom: 18, top: 18, left: 20, right: 20),
+                      ),
+                      child: Text(
+                        'Voltar para\na página\ninicial',
+                        style: GoogleFonts.raleway(fontSize: 14),
+                        textAlign: TextAlign.center,
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => AprendeComp(),
+                            ));
+                      },
                     ),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Exercite(),
-                          ));
-                    },
+                    decoration: const BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: Offset(6.0, 6.0),
+                          blurRadius: 4.0,
+                          spreadRadius: 2.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.green,
+                          offset: Offset(4.0, 4.0),
+                          blurRadius: 2.0,
+                          spreadRadius: 1.0,
+                        ),
+                      ],
+                    ),
                   ),
-                  Spacer(),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.green,
-                      onSurface: Colors.green,
-                      elevation: 10,
-                      shadowColor: Colors.black,
-                      padding: const EdgeInsets.only(
-                          bottom: 18, top: 18, left: 20, right: 20),
-                    ),
-                    child: Text(
-                      'Voltar para\na página\ninicial',
-                      style: GoogleFonts.raleway(fontSize: 14),
-                      textAlign: TextAlign.center,
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => AprendeComp(),
-                          ));
-                    },
-                  )
                 ],
               ),
             ),

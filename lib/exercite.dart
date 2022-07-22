@@ -18,7 +18,7 @@ class Exercite extends StatelessWidget {
       appBar: AppBar(
         title: Text('Exercite',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),

@@ -16,7 +16,7 @@ class Questao1 extends StatelessWidget {
       appBar: AppBar(
         title: Text('Questão 1',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
@@ -44,7 +44,7 @@ class Questao1 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 78, right: 78)),
+                        bottom: 18, top: 18, left: 73, right: 73)),
                 child: Text('Algoritmo',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
@@ -64,7 +64,7 @@ class Questao1 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 61, right: 61)),
+                        bottom: 18, top: 18, left: 55, right: 55)),
                 child: Text('Decomposição',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
@@ -84,7 +84,7 @@ class Questao1 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 78, right: 78)),
+                        bottom: 18, top: 18, left: 73, right: 73)),
                 child: Text('Abstração',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
@@ -104,7 +104,7 @@ class Questao1 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 8, right: 8)),
+                        bottom: 18, top: 18, left: 3, right: 3)),
                 child: Text('Reconhecimento de Padrões',
                     style: GoogleFonts.raleway(
                       fontSize: 16,

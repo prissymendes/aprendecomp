@@ -16,7 +16,7 @@ class Questao3 extends StatelessWidget {
       appBar: AppBar(
         title: Text('Questão 3',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
@@ -46,7 +46,7 @@ class Questao3 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 80, right: 80)),
+                        bottom: 18, top: 18, left: 73, right: 73)),
                 child: Text('Algoritmo',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
@@ -66,7 +66,7 @@ class Questao3 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 74, right: 74)),
+                        bottom: 18, top: 18, left: 68, right: 68)),
                 child: Text('Automático',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
@@ -86,7 +86,7 @@ class Questao3 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 80, right: 80)),
+                        bottom: 18, top: 18, left: 75, right: 75)),
                 child: Text('Algébrico',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
@@ -106,7 +106,7 @@ class Questao3 extends StatelessWidget {
               TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(
-                        bottom: 18, top: 18, left: 78, right: 78)),
+                        bottom: 18, top: 18, left: 73, right: 73)),
                 child: Text('Logaritmo',
                     style: GoogleFonts.raleway(
                       fontSize: 16,

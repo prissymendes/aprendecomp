@@ -37,7 +37,7 @@ class AprendeComp extends StatelessWidget {
       appBar: AppBar(
         title: Text('AprendeComp',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 19,
             )),
         backgroundColor: Colors.green,
       ),
