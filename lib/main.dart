@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:aprendecomp/credits.dart';
 import 'package:aprendecomp/aprenda.dart';
@@ -10,11 +12,18 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AprendeComp',
       home: Scaffold(body: AprendeComp()),
-      //theme: new ThemeData(scaffoldBackgroundColor: const Colors.white),
+      theme: ThemeData(
+        textButtonTheme: TextButtonThemeData(
+            style: TextButton.styleFrom(
+                primary: Colors.black,
+                side: const BorderSide(color: Colors.grey, width: 1),
+                shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(30))))),
+      ),
     ),
   );
 }
@@ -26,7 +35,10 @@ class AprendeComp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AprendeComp'),
+        title: Text('AprendeComp',
+            style: GoogleFonts.raleway(
+              fontSize: 21,
+            )),
         backgroundColor: Colors.green,
       ),
       body: Container(
@@ -146,7 +158,7 @@ class AprendeComp extends StatelessWidget {
                 decoration: const BoxDecoration(
                   color: Color.fromRGBO(51, 51, 51, 1),
                 ),
-                child: Image.asset('images/smallest_logo.png',
+                child: Image.asset('images/compact_logo.png',
                     fit: BoxFit.scaleDown, width: 50),
               ),
               ListTile(

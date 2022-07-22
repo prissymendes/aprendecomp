@@ -17,11 +17,10 @@ class Aprenda extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Aprenda",
-          softWrap: true,
-          textAlign: TextAlign.center,
-        ),
+        title: Text("Aprenda",
+            style: GoogleFonts.raleway(
+              fontSize: 21,
+            )),
         backgroundColor: Colors.green,
       ),
       body: Container(
@@ -34,7 +33,7 @@ class Aprenda extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(bottom: 10),
               ),
-              Row(children: [
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                 Card(
                   elevation: 0,
                   child: Image.asset(
@@ -47,11 +46,8 @@ class Aprenda extends StatelessWidget {
                   "Pensamento\nComputacional",
                   softWrap: true,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                    fontSize: 18,
-                  ),
+                  style: GoogleFonts.raleway(
+                      fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ]),
               Padding(
@@ -96,7 +92,7 @@ class Aprenda extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: GoogleFonts.openSans(fontSize: 14),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(bottom: 20),
               ),
               ElevatedButton(
@@ -105,11 +101,11 @@ class Aprenda extends StatelessWidget {
                     onSurface: Colors.green,
                     elevation: 10,
                     shadowColor: Colors.black,
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 65,
                     )),
                 child: Text('Decomposição',
-                    style: GoogleFonts.quicksand(
+                    style: GoogleFonts.raleway(
                         fontSize: 15, fontWeight: FontWeight.w500)),
                 onPressed: () {
                   Navigator.push(
@@ -119,7 +115,7 @@ class Aprenda extends StatelessWidget {
                       ));
                 },
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(bottom: 15),
               ),
               ElevatedButton(
@@ -130,7 +126,7 @@ class Aprenda extends StatelessWidget {
                   shadowColor: Colors.black,
                 ),
                 child: Text('Reconhecimento de Padrões',
-                    style: GoogleFonts.quicksand(
+                    style: GoogleFonts.raleway(
                         fontSize: 15, fontWeight: FontWeight.w500)),
                 onPressed: () {
                   Navigator.push(
@@ -154,7 +150,7 @@ class Aprenda extends StatelessWidget {
                   ),
                 ),
                 child: Text('Abstração',
-                    style: GoogleFonts.quicksand(
+                    style: GoogleFonts.raleway(
                         fontSize: 15, fontWeight: FontWeight.w500)),
                 onPressed: () {
                   Navigator.push(
@@ -164,7 +160,7 @@ class Aprenda extends StatelessWidget {
                       ));
                 },
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(bottom: 15),
               ),
               ElevatedButton(
@@ -173,11 +169,11 @@ class Aprenda extends StatelessWidget {
                     onSurface: Colors.green,
                     elevation: 10,
                     shadowColor: Colors.black,
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 81,
                     )),
                 child: Text('Algoritmo',
-                    style: GoogleFonts.quicksand(
+                    style: GoogleFonts.raleway(
                         fontSize: 15, fontWeight: FontWeight.w500)),
                 onPressed: () {
                   Navigator.push(

@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:aprendecomp/exercite.dart';
 import 'package:aprendecomp/main.dart';
-//import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Erro extends StatelessWidget {
   const Erro({Key? key}) : super(key: key);
@@ -13,14 +13,18 @@ class Erro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('Tente novamente!'),
+        title: Text('Tente novamente!',
+            style: GoogleFonts.raleway(
+              fontSize: 21,
+            )),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(bottom: 50),
             ),
             Card(

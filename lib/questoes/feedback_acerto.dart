@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:aprendecomp/exercite.dart';
 import 'package:aprendecomp/main.dart';
-//import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Acerto extends StatelessWidget {
   const Acerto({Key? key}) : super(key: key);
@@ -13,16 +13,18 @@ class Acerto extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('✓'),
+        title: Text('Resposta correta',
+            style: GoogleFonts.raleway(
+              fontSize: 21,
+            )),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
+        padding: EdgeInsets.only(left: 18, right: 18, top: 50),
         child: Column(
           children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(bottom: 50),
-            ),
             Card(
               elevation: 0,
               child: Image.asset(
@@ -36,15 +38,12 @@ class Acerto extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Muito bem, você acertou!',
-                softWrap: true,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 18,
-                ),
-              ),
+              child: Text('Muito bem, você acertou!',
+                  softWrap: true,
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.raleway(
+                    fontSize: 22,
+                  )),
             ),
             Padding(
               padding: EdgeInsets.only(bottom: 50),
@@ -61,12 +60,17 @@ class Acerto extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 65, 90, 173),
-                      onSurface: Colors.green,
-                      elevation: 20,
-                      shadowColor: Color.fromARGB(255, 65, 90, 173),
+                        primary: Colors.green,
+                        onSurface: Colors.green,
+                        elevation: 10,
+                        shadowColor: Colors.black,
+                        padding: const EdgeInsets.only(
+                            bottom: 26, top: 26, left: 25, right: 25)),
+                    child: Text(
+                      'Mais\nquestões',
+                      style: GoogleFonts.raleway(fontSize: 14),
+                      textAlign: TextAlign.center,
                     ),
-                    child: Text('      Mais questões       '),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -78,12 +82,18 @@ class Acerto extends StatelessWidget {
                   Spacer(),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 65, 90, 173),
+                      primary: Colors.green,
                       onSurface: Colors.green,
-                      elevation: 20,
-                      shadowColor: Color.fromARGB(255, 65, 90, 173),
+                      elevation: 10,
+                      shadowColor: Colors.black,
+                      padding: const EdgeInsets.only(
+                          bottom: 18, top: 18, left: 20, right: 20),
                     ),
-                    child: Text('Voltar para a página inicial'),
+                    child: Text(
+                      'Voltar para\na página\ninicial',
+                      style: GoogleFonts.raleway(fontSize: 14),
+                      textAlign: TextAlign.center,
+                    ),
                     onPressed: () {
                       Navigator.push(
                           context,

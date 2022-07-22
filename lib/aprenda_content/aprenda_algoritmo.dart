@@ -4,16 +4,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-//import 'package:flutter/widgets.dart';
 
-class Decomposicao extends StatelessWidget {
-  const Decomposicao({Key? key}) : super(key: key);
+class Algoritmo extends StatelessWidget {
+  const Algoritmo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Decomposição',
+        title: Text('Algoritmo',
             style: GoogleFonts.raleway(
               fontSize: 21,
             )),
@@ -30,16 +29,16 @@ class Decomposicao extends StatelessWidget {
               Card(
                 elevation: 0,
                 child: Image.asset(
-                  "images/slicing-pizza-publicdomain.png",
+                  "images/recipe.jpg",
                   fit: BoxFit.scaleDown,
-                  width: 200,
+                  width: 300,
                 ),
               ),
               Padding(
                 padding: EdgeInsets.only(bottom: 10),
               ),
               Text(
-                "Decomposição",
+                "Algoritmo",
                 softWrap: true,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.raleway(
@@ -48,15 +47,11 @@ class Decomposicao extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Se eu quero comer uma pizza inteira, é '
-                  'mais fácil eu dividi-la em pedaços, e comer '
-                  'uma fatia por vez, do que tentar consumi-la de '
-                  'uma vez só.\nDa mesma forma, podemos '
-                  'comparar com a resolução de determinados '
-                  'problemas: se conseguirmos dividir um problema em '
-                  'partes, tratando uma de cada vez, ao final, '
-                  'teremos resolvido tudo.\nChamamos este conceito'
-                  ' de Decomposição.',
+                  'A realização de tarefas geralmente envolve\n'
+                  'uma sequência de etapas, a serem cumpridas\n'
+                  'numa determinada ordem. Um algoritmo é a\n'
+                  'descrição do passo-a-passo necessário\n'
+                  'para cumprir uma tarefa.\n',
                   softWrap: true,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.openSans(fontSize: 14),
@@ -71,7 +66,7 @@ class Decomposicao extends StatelessWidget {
               Container(
                 color: Color.fromARGB(255, 207, 231, 180),
                 padding: EdgeInsets.only(right: 10),
-                child: Column(
+                child: Row(
                   children: [
                     /*Icon(
                     Icons.view_headline_outlined,
@@ -83,24 +78,17 @@ class Decomposicao extends StatelessWidget {
                     ),
                     Text('Exemplo:   '),
                     Text(
-                      'Para calcular a despesa mensal de\n'
-                      'uma casa, em vez de somar todos os\n'
-                      'gastos de uma vez só, podemos dividi-los\n'
-                      'em categorias, como contas, alimentação,\n'
-                      'transporte, etc.\n'
-                      'Como essas categorias possuem menos itens,\n'
-                      'então dentro de cada uma delas, vai ser uma\n'
-                      'soma mais fácil de resolver. Exemplo:\n\n'
-                      'Contas = Energia + Água + Aluguel\n'
-                      'Despesas de Alimentação = Mercado + Feira + Padaria\n'
-                      'Despesas de Transporte = Passagens de Ônibus + Gasolina\n\n'
-                      'E o valor final vai ser a soma dos resultados\n'
-                      'obtidos de cada categoria, que neste exemplo,\n'
-                      'corresponderão a três parcelas:\n\n'
-                      'Total de despesas da casa = Contas + Despesas de Alimentação\n'
-                      '+ Despesas de Transporte.',
+                      'No dia-a-dia, um exemplo prático seria\n'
+                      'uma receita de bolo: diversos elementos\n'
+                      'são necessários para que ele possa ser feito\n'
+                      '(os ingredientes), e são feitas ações para\n'
+                      'processá-los de forma a chegar ao resultado desejado\n'
+                      '(as etapas da receita). A sequência em que elas são\n'
+                      'feitas é importante: você não ia querer comer um bolo\n'
+                      'em que os ovos só fossem adicionados depois de ele\n'
+                      'ter ido ao forno, não é?',
                       style: GoogleFonts.raleway(fontSize: 15),
-                    ),
+                    )
                   ],
                 ),
               ),

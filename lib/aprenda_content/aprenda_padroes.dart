@@ -4,18 +4,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-//import 'package:flutter/widgets.dart';
 
-class Decomposicao extends StatelessWidget {
-  const Decomposicao({Key? key}) : super(key: key);
+class Padroes extends StatelessWidget {
+  const Padroes({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Decomposição',
+        title: Text('Reconhecimento de\nPadrões',
             style: GoogleFonts.raleway(
-              fontSize: 21,
+              fontSize: 17,
             )),
         backgroundColor: Colors.green,
       ),
@@ -30,7 +29,7 @@ class Decomposicao extends StatelessWidget {
               Card(
                 elevation: 0,
                 child: Image.asset(
-                  "images/slicing-pizza-publicdomain.png",
+                  "images/Seriation_task_w_shapes.jpg",
                   fit: BoxFit.scaleDown,
                   width: 200,
                 ),
@@ -39,7 +38,7 @@ class Decomposicao extends StatelessWidget {
                 padding: EdgeInsets.only(bottom: 10),
               ),
               Text(
-                "Decomposição",
+                "Reconhecimento de Padrões",
                 softWrap: true,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.raleway(
@@ -48,15 +47,14 @@ class Decomposicao extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Se eu quero comer uma pizza inteira, é '
-                  'mais fácil eu dividi-la em pedaços, e comer '
-                  'uma fatia por vez, do que tentar consumi-la de '
-                  'uma vez só.\nDa mesma forma, podemos '
-                  'comparar com a resolução de determinados '
-                  'problemas: se conseguirmos dividir um problema em '
-                  'partes, tratando uma de cada vez, ao final, '
-                  'teremos resolvido tudo.\nChamamos este conceito'
-                  ' de Decomposição.',
+                  'Quando se conseguem identificar semelhanças\n'
+                  'entre objetos ou situações, se diz que eles\n'
+                  'obedecem a um padrão. Isto é útil quando se quer\n'
+                  'resolver um problema: se já existe uma solução que\n'
+                  'funcionou em situações similares, aplicá-la a seu\n'
+                  'problema pode ajudar a tratá-lo mais rapidamente.\n'
+                  'Por isso que o Reconhecimento de Padrões é um\n'
+                  'importante componente do Pensamento Computacional.',
                   softWrap: true,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.openSans(fontSize: 14),
@@ -71,7 +69,7 @@ class Decomposicao extends StatelessWidget {
               Container(
                 color: Color.fromARGB(255, 207, 231, 180),
                 padding: EdgeInsets.only(right: 10),
-                child: Column(
+                child: Row(
                   children: [
                     /*Icon(
                     Icons.view_headline_outlined,
@@ -83,24 +81,17 @@ class Decomposicao extends StatelessWidget {
                     ),
                     Text('Exemplo:   '),
                     Text(
-                      'Para calcular a despesa mensal de\n'
-                      'uma casa, em vez de somar todos os\n'
-                      'gastos de uma vez só, podemos dividi-los\n'
-                      'em categorias, como contas, alimentação,\n'
-                      'transporte, etc.\n'
-                      'Como essas categorias possuem menos itens,\n'
-                      'então dentro de cada uma delas, vai ser uma\n'
-                      'soma mais fácil de resolver. Exemplo:\n\n'
-                      'Contas = Energia + Água + Aluguel\n'
-                      'Despesas de Alimentação = Mercado + Feira + Padaria\n'
-                      'Despesas de Transporte = Passagens de Ônibus + Gasolina\n\n'
-                      'E o valor final vai ser a soma dos resultados\n'
-                      'obtidos de cada categoria, que neste exemplo,\n'
-                      'corresponderão a três parcelas:\n\n'
-                      'Total de despesas da casa = Contas + Despesas de Alimentação\n'
-                      '+ Despesas de Transporte.',
+                      'Como um médico consegue rapidamente diagnosticar\n'
+                      'uma doença? Quando o paciente relata o seu caso,\n'
+                      'pode-se identificar um padrão, em que os sintomas\n'
+                      'informados correspondem a uma determinada doença.\n'
+                      'Com base nessa informação, o médico pode indicar\n'
+                      'remédios que já foram utilizados com sucesso no\n'
+                      'tratamento da doença em questão, em vez de toda vez\n'
+                      'testar vários remédios para descobrir qual deles\n'
+                      'resolveria o problema.',
                       style: GoogleFonts.raleway(fontSize: 15),
-                    ),
+                    )
                   ],
                 ),
               ),
