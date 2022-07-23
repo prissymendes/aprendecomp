@@ -83,7 +83,7 @@ class Abstracao extends StatelessWidget {
                       'este problema, deve-se ignorar as demais informações, '
                       'o que não significa que elas não possam ser úteis '
                       'em outras situações (por exemplo, na escolha do tipo '
-                      'de tinta!).',
+                      'de tinta).',
                       style: GoogleFonts.raleway(fontSize: 15),
                     )
                   ],

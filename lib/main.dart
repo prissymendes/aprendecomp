@@ -4,6 +4,10 @@
 
 import 'dart:ui';
 
+import 'package:aprendecomp/aprenda_content/aprenda_decomposicao.dart';
+import 'package:aprendecomp/aprenda_content/aprenda_padroes.dart';
+import 'package:aprendecomp/aprenda_content/aprenda_abstracao.dart';
+import 'package:aprendecomp/aprenda_content/aprenda_algoritmo.dart';
 import 'package:flutter/material.dart';
 import 'package:aprendecomp/credits.dart';
 import 'package:aprendecomp/aprenda.dart';
@@ -95,7 +99,7 @@ class AprendeComp extends StatelessWidget {
                       ]),
                     ),
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(bottom: 10),
                   ),
                   GestureDetector(
@@ -107,7 +111,7 @@ class AprendeComp extends StatelessWidget {
                       );
                     },
                     child: Container(
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       width: 220,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
@@ -143,73 +147,164 @@ class AprendeComp extends StatelessWidget {
                   ),
                 ]),
           )),
-      drawer: Drawer(
-        child: Container(
-          width: 12,
-          // Add a ListView to the drawer. This ensures the user can scroll
-          // through the options in the drawer if there isn't enough vertical
-          // space to fit everything.
-          child: ListView(
-            // Important: Remove any padding from the ListView.
-            padding: EdgeInsets.zero,
-            children: <Widget>[
-              DrawerHeader(
-                margin: EdgeInsets.zero,
-                decoration: const BoxDecoration(
-                  color: Color.fromRGBO(51, 51, 51, 1),
-                ),
-                child: Image.asset('images/compact_logo.png',
-                    fit: BoxFit.scaleDown, width: 50),
-              ),
-              ListTile(
-                title: Text(
-                  'Aprenda',
-                  style: GoogleFonts.raleway(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
+      drawer: Container(
+        width: MediaQuery.of(context).size.width * 0.9,
+        child: Drawer(
+          child: Container(
+            width: 12,
+            // Add a ListView to the drawer. This ensures the user can scroll
+            // through the options in the drawer if there isn't enough vertical
+            // space to fit everything.
+            child: ListView(
+              // Important: Remove any padding from the ListView.
+              padding: EdgeInsets.zero,
+              children: <Widget>[
+                DrawerHeader(
+                  margin: EdgeInsets.zero,
+                  decoration: const BoxDecoration(
+                    color: Color.fromRGBO(51, 51, 51, 1),
                   ),
+                  child: Image.asset('images/compact_logo.png',
+                      fit: BoxFit.scaleDown, width: 50),
                 ),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => Aprenda(),
+                ExpansionTile(
+                  iconColor: Colors.grey,
+                  collapsedIconColor: Colors.grey,
+                  title: Text(
+                    'Aprenda',
+                    style: GoogleFonts.raleway(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
                     ),
-                  );
-                },
-              ),
-              ListTile(
-                title: Text(
-                  'Exercite',
-                  style: GoogleFonts.raleway(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
                   ),
-                ),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => Exercite(),
+                  children: <Widget>[
+                    ListTile(
+                      tileColor: Color.fromARGB(255, 240, 240, 240),
+                      contentPadding: EdgeInsets.only(left: 40),
+                      title: Text(
+                        'Pensamento Computacional',
+                        style: GoogleFonts.raleway(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => Aprenda(),
+                          ),
+                        );
+                      },
                     ),
-                  );
-                },
-              ),
-              ListTile(
-                title: Text(
-                  'Créditos',
-                  style: GoogleFonts.raleway(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
+                    ListTile(
+                      tileColor: Color.fromARGB(255, 240, 240, 240),
+                      contentPadding: EdgeInsets.only(left: 40),
+                      title: Text(
+                        'Decomposição',
+                        style: GoogleFonts.raleway(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => Decomposicao(),
+                          ),
+                        );
+                      },
+                    ),
+                    ListTile(
+                      tileColor: Color.fromARGB(255, 240, 240, 240),
+                      contentPadding: EdgeInsets.only(left: 40),
+                      title: Text(
+                        'Reconhecimento de Padrões',
+                        style: GoogleFonts.raleway(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => Padroes(),
+                          ),
+                        );
+                      },
+                    ),
+                    ListTile(
+                      tileColor: Color.fromARGB(255, 240, 240, 240),
+                      contentPadding: EdgeInsets.only(left: 40),
+                      title: Text(
+                        'Abstração',
+                        style: GoogleFonts.raleway(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => Abstracao(),
+                          ),
+                        );
+                      },
+                    ),
+                    ListTile(
+                      tileColor: Color.fromARGB(255, 240, 240, 240),
+                      contentPadding: EdgeInsets.only(left: 40),
+                      title: Text(
+                        'Algoritmo',
+                        style: GoogleFonts.raleway(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => Algoritmo(),
+                          ),
+                        );
+                      },
+                    ),
+                  ],
+                ),
+                ListTile(
+                  title: Text(
+                    'Exercite',
+                    style: GoogleFonts.raleway(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => Exercite(),
+                      ),
+                    );
+                  },
                 ),
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => Credits(),
+                ListTile(
+                  title: Text(
+                    'Créditos',
+                    style: GoogleFonts.raleway(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
                     ),
-                  );
-                },
-              ),
-            ],
+                  ),
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => Credits(),
+                      ),
+                    );
+                  },
+                ),
+              ],
+            ),
           ),
         ),
       ),

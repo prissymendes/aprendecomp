@@ -52,7 +52,7 @@ class Padroes extends StatelessWidget {
                   'resolver um problema: se já existe uma solução que '
                   'funcionou em situações similares, aplicá-la a seu '
                   'problema pode ajudar a tratá-lo mais rapidamente.'
-                  'Por isso que o Reconhecimento de Padrões é um '
+                  ' Por isso que o Reconhecimento de Padrões é um '
                   'importante componente do Pensamento Computacional.',
                   softWrap: true,
                   textAlign: TextAlign.left,
@@ -81,10 +81,9 @@ class Padroes extends StatelessWidget {
                       'pode-se identificar um padrão, em que os sintomas '
                       'informados correspondem a uma determinada doença. '
                       'Com base nessa informação, o médico pode indicar '
-                      'remédios que já foram utilizados com sucesso no '
-                      'tratamento da doença em questão, em vez de toda vez '
-                      'testar vários remédios para descobrir qual deles '
-                      'resolveria o problema.',
+                      'remédios que já foram eficazes para tratar a '
+                      'doença em questão, no lugar de toda vez testar vários remédios '
+                      'para descobrir qual deles resolveria o problema.',
                       style: GoogleFonts.raleway(fontSize: 15),
                     )
                   ],

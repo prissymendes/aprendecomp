@@ -80,7 +80,7 @@ class Aprenda extends StatelessWidget {
                 endIndent: 22,
               ),
               Padding(
-                padding: EdgeInsets.only(bottom: 15),
+                padding: EdgeInsets.only(bottom: 10),
               ),
               Text(
                 "Conheça alguns elementos que compõem o Pensamento Computacional, clicando a seguir:",

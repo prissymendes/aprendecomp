@@ -30,7 +30,7 @@ class Erro extends StatelessWidget {
               child: Image.asset(
                 "images/jean_victor_balin_cross.png",
                 fit: BoxFit.scaleDown,
-                width: 150,
+                width: 100,
               ),
             ),
             const Padding(
