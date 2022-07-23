@@ -95,7 +95,7 @@ class Acerto extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Spacer(),
+                  const SizedBox(width: 50),
                   Container(
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(

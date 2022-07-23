@@ -68,7 +68,7 @@ class Padroes extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                        'Exemplo:                                                          ',
+                        'Exemplo:                                                                                                 ',
                         textAlign: TextAlign.left,
                         style: GoogleFonts.raleway(
                             fontSize: 14, fontWeight: FontWeight.bold)),
