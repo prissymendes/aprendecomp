@@ -11,26 +11,26 @@
 <table style="border-collapse: collapse; width: 100%;" border="1">
 <tbody>
 <tr>
-<td style="width: 25%;"><strong>Main</strong><img src="https://i.imgur.com/zhgx9C2.png" alt="" width="200" height="393" /></td>
-<td style="width: 25%;"><strong>Main - Drawer aberto</strong><img src="https://i.imgur.com/UuGyjSo.png" alt="" width="200" height="395" /></td>
-<td style="width: 25%;"><strong>Aprenda</strong><img src="https://i.imgur.com/yUuDzZ3.png" alt="" width="200" height="392" /></td>
-<td style="width: 25%;"><strong>Cr&eacute;ditos</strong><img src="https://i.imgur.com/lKfzuYx.png" alt="" width="200" height="394" /></td>
+<td style="width: 25%;"><strong>Main</strong><br><img src="https://i.imgur.com/zhgx9C2.png" alt="" width="200" height="393" /></td>
+<td style="width: 25%;"><strong>Main - Drawer aberto</strong><br><img src="https://i.imgur.com/UuGyjSo.png" alt="" width="200" height="395" /></td>
+<td style="width: 25%;"><strong>Aprenda</strong><br><img src="https://i.imgur.com/yUuDzZ3.png" alt="" width="200" height="392" /></td>
+<td style="width: 25%;"><strong>Cr&eacute;ditos</strong><br><img src="https://i.imgur.com/lKfzuYx.png" alt="" width="200" height="394" /></td>
 </tr>
 <tr>
-<td style="width: 25%;"><strong>Decomposi&ccedil;&atilde;o</strong><img src="https://i.imgur.com/JUlhrJU.png" alt="" width="200" height="393" /></td>
-<td style="width: 25%;"><strong>Reconhecimento Padr&otilde;es</strong><img src="https://i.imgur.com/ap1OOxf.png" alt="" width="200" height="393" /></td>
-<td style="width: 25%;"><strong>Abstra&ccedil;&atilde;o</strong><img src="https://i.imgur.com/d5LQoHX.png" alt="" width="200" height="395" /></td>
-<td style="width: 25%;"><strong>Algoritmo</strong><img src="https://i.imgur.com/4ckupAg.png" alt="" width="200" height="393" /></td>
+<td style="width: 25%;"><strong>Decomposi&ccedil;&atilde;o</strong><br><img src="https://i.imgur.com/JUlhrJU.png" alt="" width="200" height="393" /></td>
+<td style="width: 25%;"><strong>Reconhecimento Padr&otilde;es</strong><br><img src="https://i.imgur.com/ap1OOxf.png" alt="" width="200" height="393" /></td>
+<td style="width: 25%;"><strong>Abstra&ccedil;&atilde;o</strong><br><img src="https://i.imgur.com/d5LQoHX.png" alt="" width="200" height="395" /></td>
+<td style="width: 25%;"><strong>Algoritmo</strong><br><img src="https://i.imgur.com/4ckupAg.png" alt="" width="200" height="393" /></td>
 </tr>
 <tr>
-<td style="width: 25%;"><strong>Exercite</strong><img src="https://i.imgur.com/IGJbrbc.png" alt="" width="200" height="396" /></td>
-<td style="width: 25%;"><strong>Quest&atilde;o 1</strong><img src="https://i.imgur.com/XJwj01I.png" alt="" width="200" height="394" /></td>
-<td style="width: 25%;"><strong>Quest&atilde;o 2</strong><img src="https://i.imgur.com/A2g9hT7.png" alt="" width="200" height="391" /></td>
-<td style="width: 25%;"><strong>Quest&atilde;o 3</strong><img src="https://i.imgur.com/u6bytre.png" alt="" width="200" height="393" /></td>
+<td style="width: 25%;"><strong>Exercite</strong><br><img src="https://i.imgur.com/IGJbrbc.png" alt="" width="200" height="396" /></td>
+<td style="width: 25%;"><strong>Quest&atilde;o 1</strong><br><img src="https://i.imgur.com/XJwj01I.png" alt="" width="200" height="394" /></td>
+<td style="width: 25%;"><strong>Quest&atilde;o 2</strong><br><img src="https://i.imgur.com/A2g9hT7.png" alt="" width="200" height="391" /></td>
+<td style="width: 25%;"><strong>Quest&atilde;o 3</strong><br><img src="https://i.imgur.com/u6bytre.png" alt="" width="200" height="393" /></td>
 </tr>
 <tr>
-<td style="width: 25%;"><strong>Feedback - Acerto</strong><img src="https://i.imgur.com/PPovcGf.png" alt="" width="200" height="394" /></td>
-<td style="width: 25%;"><strong>Feedback - Erro</strong><img src="https://i.imgur.com/JExdq4e.png" alt="" width="200" height="396" /></td>
+<td style="width: 25%;"><strong>Feedback - Acerto</strong><br><img src="https://i.imgur.com/PPovcGf.png" alt="" width="200" height="394" /></td>
+<td style="width: 25%;"><strong>Feedback - Erro</strong><br><img src="https://i.imgur.com/JExdq4e.png" alt="" width="200" height="396" /></td>
 </tr>
 </tbody>
 </table>
