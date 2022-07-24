@@ -3,9 +3,36 @@
 <p>O aplicativo AprendeComp visa auxiliar o desenvolvimento do conhecimento de Pensamento Computacional, o qual tem o benefício de auxiliar a estruturação do pensamento na resolução de problemas. Ele é composto por conteúdos didáticos e exercícios de fixação.</p>
 <p>Este projeto foi desenvolvido por Priscilla B. Mendes, como requisito para a disciplina Fundamentos de Programação Aplicada, do Programa de Pós-Graduação em Informática Aplicada - Universidade Federal Rural de Pernambuco.</p>
 <h2>Vídeos Informativos sobre o Projeto</h2>
-<a href="https://www.youtube.com/watch?v=52n_fQalfZI">Apresentação do Aplicativo</a><br>
-<a href="https://drive.google.com/file/d/1Qfdbmszk11YIuxGMQnOlS3U5EYXUGI7S/view?usp=sharing">Demonstração do Aplicativo</a><!--<br>
+<a href="https://www.youtube.com/watch?v=52n_fQalfZI" target="_blank">Apresentação do Aplicativo</a><br>
+<a href="https://drive.google.com/file/d/1Qfdbmszk11YIuxGMQnOlS3U5EYXUGI7S/view?usp=sharing" target="_blank">Demonstração do Aplicativo</a><!--<br>
 <h2>Play Store</h2>
 <a>Link para a página do aplicativo na Google Play Store</a><br>-->
+<h2>Imagens das Telas do Aplicativo</h2>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 25%;"><strong>Main</strong><img src="https://i.imgur.com/zhgx9C2.png" alt="" width="200" height="393" /></td>
+<td style="width: 25%;"><strong>Main - Drawer aberto</strong><img src="https://i.imgur.com/UuGyjSo.png" alt="" width="200" height="395" /></td>
+<td style="width: 25%;"><strong>Aprenda</strong><img src="https://i.imgur.com/yUuDzZ3.png" alt="" width="200" height="392" /></td>
+<td style="width: 25%;"><strong>Cr&eacute;ditos</strong><img src="https://i.imgur.com/lKfzuYx.png" alt="" width="200" height="394" /></td>
+</tr>
+<tr>
+<td style="width: 25%;"><strong>Decomposi&ccedil;&atilde;o</strong><img src="https://i.imgur.com/JUlhrJU.png" alt="" width="200" height="393" /></td>
+<td style="width: 25%;"><strong>Reconhecimento Padr&otilde;es</strong><img src="https://i.imgur.com/ap1OOxf.png" alt="" width="200" height="393" /></td>
+<td style="width: 25%;"><strong>Abstra&ccedil;&atilde;o</strong><img src="https://i.imgur.com/d5LQoHX.png" alt="" width="200" height="395" /></td>
+<td style="width: 25%;"><strong>Algoritmo</strong><img src="https://i.imgur.com/4ckupAg.png" alt="" width="200" height="393" /></td>
+</tr>
+<tr>
+<td style="width: 25%;"><strong>Exercite</strong><img src="https://i.imgur.com/IGJbrbc.png" alt="" width="200" height="396" /></td>
+<td style="width: 25%;"><strong>Quest&atilde;o 1</strong><img src="https://i.imgur.com/XJwj01I.png" alt="" width="200" height="394" /></td>
+<td style="width: 25%;"><strong>Quest&atilde;o 2</strong><img src="https://i.imgur.com/A2g9hT7.png" alt="" width="200" height="391" /></td>
+<td style="width: 25%;"><strong>Quest&atilde;o 3</strong><img src="https://i.imgur.com/u6bytre.png" alt="" width="200" height="393" /></td>
+</tr>
+<tr>
+<td style="width: 25%;"><strong>Feedback - Acerto</strong><img src="https://i.imgur.com/PPovcGf.png" alt="" width="200" height="394" /></td>
+<td style="width: 25%;"><strong>Feedback - Erro</strong><img src="https://i.imgur.com/JExdq4e.png" alt="" width="200" height="396" /></td>
+</tr>
+</tbody>
+</table>
 <h2>Diagrama de Navegação das Telas do Aplicativo</h2>
 <p align="left"><img src="https://i.imgur.com/gCC6Mv8.png"></p>
