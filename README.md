@@ -3,7 +3,7 @@
 <p>O aplicativo AprendeComp visa auxiliar o desenvolvimento do conhecimento de Pensamento Computacional, o qual tem o benefício de auxiliar a estruturação do pensamento na resolução de problemas. Ele é composto por conteúdos didáticos e exercícios de fixação.</p>
 <p>Este projeto foi desenvolvido por Priscilla B. Mendes, como requisito para a disciplina Fundamentos de Programação Aplicada, do Programa de Pós-Graduação em Informática Aplicada - Universidade Federal Rural de Pernambuco.</p>
 <h2>Vídeos Informativos sobre o Projeto</h2>
-<!--<a>Apresentação do Aplicativo</a><br>-->
+<a href="https://www.youtube.com/watch?v=52n_fQalfZI">Apresentação do Aplicativo</a><br>
 <a href="https://drive.google.com/file/d/1Qfdbmszk11YIuxGMQnOlS3U5EYXUGI7S/view?usp=sharing">Demonstração do Aplicativo</a><!--<br>
 <h2>Play Store</h2>
 <a>Link para a página do aplicativo na Google Play Store</a><br>-->
