@@ -29,10 +29,19 @@
 <td style="width: 25%;"><strong>Quest&atilde;o 3</strong><br><img src="https://i.imgur.com/u6bytre.png" alt="" width="200" height="393" /></td>
 </tr>
 <tr>
-<td style="width: 25%;"><strong>Feedback - Acerto</strong><br><img src="https://i.imgur.com/PPovcGf.png" alt="" width="200" height="394" /></td>
-<td style="width: 25%;"><strong>Feedback - Erro</strong><br><img src="https://i.imgur.com/JExdq4e.png" alt="" width="200" height="396" /></td>
+<td style="width: 25%;"><strong>Acerto</strong><br><img src="https://i.imgur.com/PPovcGf.png" alt="" width="200" height="394" /></td>
+<td style="width: 25%;"><strong>Erro</strong><br><img src="https://i.imgur.com/JExdq4e.png" alt="" width="200" height="396" /></td>
 </tr>
 </tbody>
 </table>
 <h2>Diagrama de Navegação das Telas do Aplicativo</h2>
 <p align="left"><img src="https://i.imgur.com/gCC6Mv8.png"></p>
+<!--<h2>Árvores de Widgets</h2>
+<h3>Tela Main</h3>
+<h3>Tela Main - Drawer aberto</h3>
+<h3>Tela Aprenda</h3>
+<h3>Tela Créditos</h3>
+<h3>Tela Algoritmo (Obs.: Também seguem a mesma estrutura as telas Decomposição, Reconhecimento de Padrões e Abstração)</h3>
+<h3>Tela Exercite</h3>
+<h3>Tela Questão 1 (Obs.: Também seguem a mesma estrutura as telas Questão 2 e Questão 3)</h3>
+<h3>Tela Acerto (Obs.: Também segue a mesma estrutura a tela Erro)</h3> -->
