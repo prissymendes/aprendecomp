@@ -4,9 +4,11 @@
 <p>Este projeto foi desenvolvido por Priscilla B. Mendes, como requisito para a disciplina Fundamentos de Programação Aplicada, do Programa de Pós-Graduação em Informática Aplicada - Universidade Federal Rural de Pernambuco.</p>
 <h2>Vídeos Informativos sobre o Projeto</h2>
 <a href="https://www.youtube.com/watch?v=52n_fQalfZI" target="_blank">Apresentação do Aplicativo</a><br>
-<a href="https://drive.google.com/file/d/1Qfdbmszk11YIuxGMQnOlS3U5EYXUGI7S/view?usp=sharing" target="_blank">Demonstração do Aplicativo</a><!--<br>
+<a href="https://drive.google.com/file/d/1Qfdbmszk11YIuxGMQnOlS3U5EYXUGI7S/view?usp=sharing" target="_blank">Demonstração do Aplicativo</a><br>
 <h2>Play Store</h2>
-<a>Link para a página do aplicativo na Google Play Store</a><br>-->
+<!--<a>Link para a página do aplicativo na Google Play Store</a>-->
+<p>Em breve - Publicação do aplicativo em fase de análise na Play Store.</p>
+<br>
 <h2>Imagens das Telas do Aplicativo</h2>
 <table style="border-collapse: collapse; width: 100%;" border="1">
 <tbody>
@@ -36,11 +38,12 @@
 </table>
 <h2>Diagrama de Navegação das Telas do Aplicativo</h2>
 <p align="left"><img src="https://i.imgur.com/gCC6Mv8.png"></p>
-<!--<h2>Árvores de Widgets</h2>
-<h3>Tela Main</h3>
-<h3>Tela Main - Drawer aberto</h3>
+<h2>Árvores de Widgets</h2>
+<!--<h3>Tela Main</h3>
+<h3>Tela Main - Drawer aberto</h3>-->
 <h3>Tela Aprenda</h3>
-<h3>Tela Créditos</h3>
+<p align="left"><img src="https://i.imgur.com/ARD7Pq7.png"></p>
+<!--<h3>Tela Créditos</h3>
 <h3>Tela Algoritmo (Obs.: Também seguem a mesma estrutura as telas Decomposição, Reconhecimento de Padrões e Abstração)</h3>
 <h3>Tela Exercite</h3>
 <h3>Tela Questão 1 (Obs.: Também seguem a mesma estrutura as telas Questão 2 e Questão 3)</h3>
