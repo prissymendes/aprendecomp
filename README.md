@@ -6,8 +6,7 @@
 <a href="https://www.youtube.com/watch?v=52n_fQalfZI" target="_blank">Apresentação do Aplicativo</a><br>
 <a href="https://drive.google.com/file/d/1Qfdbmszk11YIuxGMQnOlS3U5EYXUGI7S/view?usp=sharing" target="_blank">Demonstração do Aplicativo</a><br>
 <h2>Play Store</h2>
-<!--<a href="https://play.google.com/store/apps/details?id=com.aprendecomp" target="_blank">Link para a página do aplicativo na Google Play Store</a>-->
-<p>Em breve - Publicação do aplicativo em fase de análise na Play Store.</p><br>
+<a href="https://play.google.com/store/apps/details?id=com.aprendecomp" target="_blank">Link para a página do aplicativo na Google Play Store</a><br>
 <h2>Imagens das Telas do Aplicativo</h2>
 <table style="border-collapse: collapse; width: 100%;" border="1">
 <tbody>
