@@ -38,15 +38,19 @@
 <h2>Diagrama de Navegação das Telas do Aplicativo</h2>
 <p align="left"><img src="https://i.imgur.com/gCC6Mv8.png"></p>
 <h2>Árvores de Widgets</h2>
-<!--<h3>Tela Main</h3>
-<h3>Tela Main - Drawer aberto</h3>-->
+<h3>Tela Main</h3>
+<p align="left"><img src="https://i.imgur.com/yjZTXae.png"></p>
+<h3>Tela Main - Drawer aberto</h3>
+<p align="left"><img src="https://i.imgur.com/lnJ4Oyq.png"></p>
 <h3>Tela Aprenda</h3>
 <p align="left"><img src="https://i.imgur.com/ARD7Pq7.png"></p>
 <h3>Tela Créditos</h3>
 <p align="left"><img src="https://i.imgur.com/Nsd8Vss.png"></p>
-<!--<h3>Tela Algoritmo (Obs.: Também seguem a mesma estrutura as telas Decomposição, Reconhecimento de Padrões e Abstração)</h3>-->
+<h3>Tela Algoritmo (Obs.: Também seguem a mesma estrutura as telas Decomposição, Reconhecimento de Padrões e Abstração)</h3>
+<p align="left"><img src="https://i.imgur.com/XcKlEdP.png"></p>
 <h3>Tela Exercite</h3>
 <p align="left"><img src="https://i.imgur.com/A1ayqFn.png"></p>
 <h3>Tela Questão 1 (Obs.: Também seguem a mesma estrutura as telas Questão 2 e Questão 3)</h3>
 <p align="left"><img src="https://i.imgur.com/Z5mTpAf.png"></p>
-<!--<h3>Tela Acerto (Obs.: Também segue a mesma estrutura a tela Erro)</h3> -->
+<h3>Tela Acerto (Obs.: Também segue a mesma estrutura a tela Erro)</h3>
+<p align="left"><img src="https://i.imgur.com/V6mSTd4.png"></p>
